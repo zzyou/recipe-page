@@ -1,29 +1,93 @@
 body {
   background-color: rgba(71,249,249,.2);
+  font-family: 'Open Sans', sans-serif;
 }
 
-h1, h3 {
+h1, h3, h4 {
   color: rgba(28,97,97,.9);
   font-family: 'Volkhov', serif;
-  /* text-align: center; */
 }
 
 h1 {
+  margin: 100px 0px;
   font-size: 80px;
+  text-align: center;
+  text-shadow: 1px 1px 10px rgba(28,97,97,.5);
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(28,97,97,.5);
+  color: black;
+}
+
+img {
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(28,97,97,.5);
+}
+
+.note, footer{
+  font-family: 'Volkhov', serif;
 }
 
 .description {
-  width: 600px;
+  margin: 40px 50px;
+  /* width: 600px;*/
 }
 
 .left {
   width: 600px;
   float: left;
-  margin-top: 23px;
+  margin: 70px 50px;
 }
 
 .right {
   width: 600px;
   float: left;
-  margin-left: 30px;
+  margin: 40px 50px;
+}
+
+.ingredients {
+  margin-top: 60px;
+}
+
+.other-recipes {
+  margin-top: 40px;
+}
+
+iframe {
+  box-shadow: 0 0 3px 3px rgba(28,97,97,.5);
+}
+
+form {
+  text-align: left;
+}
+
+.name, .email {
+  padding: 5px 100px;
+  margin: 5px 33px;
+}
+
+.comment {
+  padding: 30px 100px;
+  margin: 5px 0;
+}
+
+.foot-info {
+  margin-top: 50px;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
 }

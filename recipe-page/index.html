@@ -13,36 +13,35 @@
     <link rel="stylesheet" type="text/css" href="static/css/styles.css">
 
     <style>
-    @import url('https://fonts.googleapis.com/css?family=Volkhov');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans|Volkhov');
     </style>
   </head>
 
   <body>
 
     <div class="top">
-      <hr>
       <h1>Shrimp Fried Rice</h1>
       <hr>
       <p class="description">
-      Shrimp fried rice is always my go-to dish. It is simple, but delicious. I could make it in 10 minutes with some leftover rice from the day before. Leftover rice is actually very good for making stir-fried rice, not so wet and not so dry. This dish is perfect for kids school lunch, or outdoor picnic, or take-along meal for zoo or park trips.
+      Shrimp fried rice is always my go-to dish. It is simple, but delicious.
+      I could make it in 10 minutes with some leftover rice from the day before.
+      Leftover rice is actually very good for making stir-fried rice, not so wet and not so dry.
+      This dish is perfect for kids school lunch, or outdoor picnic, or take-along meal for zoo or park trips.
       </p>
+      <hr>
     </div>
-
-    &nbsp;
 
     <div class="left">
       <div>
         <img src="http://images.media-allrecipes.com/userphotos/720x405/4557813.jpg" alt="Picture of Shrimp Fried Rice" width="600">
-        <p>Photo & Recipe Credit:
+        <p class="note">Photo & Recipe Credit:
           <button type="button">
             <a href="http://allrecipes.com/recipe/21561/shrimp-fried-rice-ii" target ="_blank">All Recipes</a>
           </button>
         </p>
       </div>
 
-      &nbsp;
-
-      <div>
+      <div class="ingredients">
         <h3>Ingredients</h3>
         <ul>
           <li>1 1/2 cups uncooked white rice</li>
@@ -61,13 +60,10 @@
       </div>
     </div>
 
-    &nbsp;
-
     <div class="right">
       <div>
         <h3>Directions</h3>
-        <p>Prep: 20 mins.</p>
-        <p>Cook: 10 mins.</p>
+        <p>Prep: 20 mins. Cook: 10 mins.</p>
         <p>Ready in: 30 mins.</p>
         <ol>
           <li>In a saucepan bring water to a boil. Add rice and stir. Reduce heat, cover and simmer for 20 minutes. Set aside and allow rice to cool.</li>
@@ -77,9 +73,7 @@
         </ol>
       </div>
 
-      &nbsp;
-
-      <div>
+      <div class="other-recipes">
         <h3>Other Recipes</h3>
 
         <p>Justine Simmons' Shrimp Fried Rice on
@@ -99,26 +93,26 @@
             <a href="https://www.youtube.com/watch?v=cbn63DRhJ5E" target="_blank">Youtube</a>
           </button>
         </p>
+
+        <form action="/action_page.php">
+          <h4>Tell me about this recipe!</h4><br>
+          Name: <input class="name" type="text" name="name"><br>
+          Email: <input class="email" type="text" name="email"><br>
+          Comment: <input class="comment" type="text" name="comment"><br>
+          <input type="submit" value="Submit">
+        </form>
+
       </div>
     </div>
-
-    &nbsp;
 
     <footer>
       <iframe width="854" height="480" src="https://www.youtube.com/embed/cbn63DRhJ5E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-      <form action="/action_page.php">
-        Name: <input type="text" name="name"><br>
-        Email: <input type="text" name="email"><br>
-        Message: <input type="text" name="message"><br>
-        <input type="submit" value="Submit">
-      </form>
-
-      <p>Or contact me by
+      <div class="foot-info">
         <a href="mailto:youzhenzhen@gmail.com" target="_top">Email</a>
-        instead :)
-      </p>
-      <p>&copy; Zhenzhen You 2018</p>
+        <p>&copy; Zhenzhen You 2018</p>
+      </div>
+
     </footer>
 
   </body>
