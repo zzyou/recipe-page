@@ -1,3 +1,7 @@
 p {
-  font-color: blue;
+  font-color:blue;
+}
+
+body {
+  background-color: rgba(51,251,255,.2);
 }
