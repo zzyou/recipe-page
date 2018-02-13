@@ -1,6 +1,7 @@
 body {
-  background-color: rgba(71,249,249,.2);
+  background: linear-gradient(45deg, rgb(230, 249, 255), rgba(71,249,249,.2));
   font-family: 'Open Sans', sans-serif;
+  /* background-color: rgba(71,249,249,.2); */
 }
 
 h1, h3, h4 {
@@ -25,7 +26,7 @@ h4 {
   margin-bottom: 0;
 }
 
-a {
+a, input {
   text-decoration: none;
   text-shadow: 1px 1px 1px rgba(28,97,97,.5);
   color: black;
@@ -42,6 +43,8 @@ img {
 
 .description {
   margin: 40px 50px;
+  line-height: 2;
+  text-indent: 50px;
   /* width: 600px;*/
 }
 
@@ -58,7 +61,19 @@ img {
 }
 
 .ingredients {
-  margin-top: 60px;
+  margin-top: 50px;
+}
+
+.ingredients li {
+  padding: 5px;
+}
+
+ol>li {
+  padding: 3px;
+}
+
+.other-recipes li {
+  padding: 5px;
 }
 
 .other-recipes {
@@ -73,13 +88,18 @@ form {
   text-align: left;
 }
 
-.name, .email {
-  padding: 5px 100px;
+.name {
+  padding: 5px 160px;
+  margin: 5px 30px;
+}
+
+.email {
+  padding: 5px 160px;
   margin: 5px 33px;
 }
 
 .comment {
-  padding: 30px 100px;
+  padding: 30px 160px;
   margin: 5px 0;
 }
 
@@ -87,7 +107,12 @@ form {
   margin-top: 50px;
 }
 
+.social {
+  width: 50px;
+  box-shadow: none;
+}
+
 footer {
-  margin-top: 50px;
+  margin: 50px 0;
   text-align: center;
 }
