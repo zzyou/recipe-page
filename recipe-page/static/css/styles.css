@@ -4,12 +4,12 @@ body {
 
 h1, h3 {
   color: rgba(28,97,97,.9);
+  font-family: 'Volkhov', serif;
+  /* text-align: center; */
 }
 
 h1 {
-  font-family: 'Volkhov', serif;
   font-size: 80px;
-  text-align: center;
 }
 
 .description {
@@ -19,4 +19,11 @@ h1 {
 .left {
   width: 600px;
   float: left;
+  margin-top: 23px;
+}
+
+.right {
+  width: 600px;
+  float: left;
+  margin-left: 30px;
 }
