@@ -1,19 +1,22 @@
+@import "helpers/variables";
+@import "helpers/placeholders";
+@import "helpers/mixins";
+
 body {
-  background: linear-gradient(45deg, rgb(230, 249, 255), rgba(71,249,249,.2));
-  font-family: 'Open Sans', sans-serif;
-  /* background-color: rgba(71,249,249,.2); */
+  @include background($background-linear);
+  @extend %text-font;
 }
 
 h1, h3, h4 {
-  color: rgba(28,97,97,.9);
-  font-family: 'Volkhov', serif;
+  color: $header-color;
+  @extend %header-font;
 }
 
 h1 {
   margin: 100px 0px;
   font-size: 80px;
   text-align: center;
-  text-shadow: 1px 1px 10px rgba(28,97,97,.5);
+  text-shadow: 1px 1px 10px $shadow-color;
 }
 
 h3 {
@@ -28,64 +31,60 @@ h4 {
 
 a, input {
   text-decoration: none;
-  text-shadow: 1px 1px 1px rgba(28,97,97,.5);
+  text-shadow: 1px 1px 1px $shadow-color;
   color: black;
 }
 
-/* a:hover {
-  cursor: pointer;
-} */
-
 img {
   border-radius: 10px;
-  box-shadow: 0 0 5px 5px rgba(28,97,97,.5);
+  box-shadow: 0 0 5px 5px $shadow-color;
 }
 
 .note, footer{
-  font-family: 'Volkhov', serif;
+  @extend %header-font;
 }
 
 .description {
   margin: 40px 50px;
   line-height: 2;
   text-indent: 50px;
-  /* width: 600px; */
+}
+
+.left, .right {
+  width: 600px;
+  float: left;
 }
 
 .left {
-  width: 600px;
-  float: left;
   margin: 70px 50px;
 }
 
 .right {
-  width: 600px;
-  float: left;
   margin: 40px 50px;
 }
 
 .ingredients {
   margin-top: 50px;
+  li {
+    padding: 5px;
+  }
 }
 
-.ingredients li {
-  padding: 5px;
-}
-
-ol>li {
-  padding: 3px;
-}
-
-.other-recipes li {
-  padding: 5px;
+ol {
+  li {
+    padding: 3px;
+  }
 }
 
 .other-recipes {
   margin-top: 40px;
+  li {
+    padding: 5px;
+  }
 }
 
 iframe {
-  box-shadow: 0 0 3px 3px rgba(28,97,97,.5);
+  box-shadow: 0 0 3px 3px $shadow-color;
 }
 
 form {
