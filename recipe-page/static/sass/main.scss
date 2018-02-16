@@ -36,6 +36,11 @@ a, input {
 }
 
 img {
+  &:hover {
+    @include transform (rotatey(-180deg));
+  }
+  @include transform-style(preserve-3d);
+  @include transition(0.8s);
   border-radius: 10px;
   box-shadow: 0 0 5px 5px $shadow-color;
 }
