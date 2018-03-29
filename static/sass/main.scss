@@ -1,0 +1,126 @@
+@import "helpers/variables";
+@import "helpers/placeholders";
+@import "helpers/mixins";
+
+body {
+  @include background($background-linear);
+  @extend %text-font;
+}
+
+h1, h3, h4 {
+  color: $header-color;
+  @extend %header-font;
+}
+
+h1 {
+  margin: 100px 0px;
+  font-size: 80px;
+  text-align: center;
+  text-shadow: 1px 1px 10px $shadow-color;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+a, input {
+  text-decoration: none;
+  text-shadow: 1px 1px 1px $shadow-color;
+  color: black;
+}
+
+img {
+  &:hover {
+    @include transform (rotatey(-180deg));
+  }
+  @include transform-style(preserve-3d);
+  @include transition(0.8s);
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px $shadow-color;
+}
+
+.note, footer{
+  @extend %header-font;
+}
+
+.description {
+  margin: 40px 50px;
+  line-height: 2;
+  text-indent: 50px;
+}
+
+.left, .right {
+  width: 600px;
+  float: left;
+}
+
+.left {
+  margin: 70px 50px;
+}
+
+.right {
+  margin: 40px 50px;
+}
+
+.ingredients {
+  margin-top: 50px;
+  li {
+    padding: 5px;
+  }
+}
+
+ol {
+  li {
+    padding: 3px;
+  }
+}
+
+.other-recipes {
+  margin-top: 40px;
+  li {
+    padding: 5px;
+  }
+}
+
+iframe {
+  box-shadow: 0 0 3px 3px $shadow-color;
+}
+
+form {
+  text-align: left;
+}
+
+.name {
+  padding: 5px 160px;
+  margin: 5px 30px;
+}
+
+.email {
+  padding: 5px 160px;
+  margin: 5px 33px;
+}
+
+.comment {
+  padding: 30px 160px;
+  margin: 5px 0;
+}
+
+.foot-info {
+  margin-top: 50px;
+}
+
+.social {
+  width: 50px;
+  box-shadow: none;
+}
+
+footer {
+  margin: 50px 0;
+  text-align: center;
+}
